@@ -1,0 +1,131 @@
+/*
+    To do List:
+
+    - Add the slider component
+    - Add the toggle button
+    - Add the hover property to the slider, toggle button and start trial button
+    - Responsiveness
+    - Work on the Js. The price should change when the slider reach certain places
+
+    To the toggle button theres some material here: https://www.w3schools.com/howto/howto_css_switch.asp
+    It seems I need some CSS animation to do it
+
+    The slider seems harder
+*/
+/****************************************** Styles given by FEM **********************/
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+.attribution { 
+    margin-top: 15px;
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/****************************************** Generic Styles *****************************/
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    height: 100vh;
+}
+
+.flex-col-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-row-center{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container{
+    height: 100%;
+    background-image: url('./images/bg-pattern.svg');
+    background-repeat: no-repeat;
+    font-size: 12px;
+    color: hsl(225, 20%, 60%);
+}
+
+.title-container{
+    height: 25%;
+    background-image: url('./images/pattern-circles.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    text-align: center;
+    font-size: 10px;
+}
+
+.component-container{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 13px;
+}
+
+ul{
+    list-style-image: url('./images/icon-check.svg');
+}
+
+ul li{
+    margin: 10px auto;
+}
+
+.start-trial{
+    padding: 15px 30px;
+    border-style: none;
+    border-radius: 30px;
+    background-color: hsl(227, 35%, 25%);
+    color: hsl(225, 20%, 60%);
+    text-align: center;
+}
+
+.discount{
+    padding: 2px 5px;
+    border-radius: 25px;
+    background-color: hsl(14, 92%, 95%);
+    text-align: center;
+    color: hsl(15, 100%, 70%);
+}
+/******************************************* Mobile Styles ***************************/
+.sub-title{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.component-container{
+    width: 80%;
+    max-width: 345px;
+    display: flex;
+}
+
+.price-desktop{
+    display: none;
+}
+
+.upward-container{
+    width: 100%;
+}
+
+.billing-options{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.yearly{
+    display: inherit;
+}
+
+.yearly-text{
+    margin-right: 10px;
+}

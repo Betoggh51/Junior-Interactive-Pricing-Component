@@ -10,14 +10,14 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="main-container">
+  <div class="main-container flex-col-center">
     <div class="title-container">
       <h1 class="main-title"> Simple, traffic-based pricing </h1>
       <h2 class="sub-title"> Sign up for our 30-day trial. No credit card required </h2>
     </div>
 
-    <div class="component-container">
-      <div class="upward-container">
+    <div class="component-container flex-col-center">
+      <div class="upward-container flex-col-center">
         <span class="pageviews-price-container">
           <p class="pageviews"> 100k PAGEVIEWS</p>
           <span class="price-desktop">
@@ -27,18 +27,20 @@
         </span>
 
         <div class="slider-component">
-
+          slider-component
         </div>
 
         <div class="billing-container">
-          <span class="price-mobile">
+          <span class="price-mobile flex-col-center">
             <h2 class="price-number"></h2>
             <p class="month-text"> / month</p>
+          </span>
           <div class="billing-options">
             <p class="monthly billing"> Monthly Billing</p>
-          <button class="biling-button">
-
-          </button>
+            <label class="toggle-button">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
           <span class="yearly">
             <p class="yearly-text"> Yearly Billing</p>
             <p class="discount"> -25%</p>
@@ -55,7 +57,7 @@
             <li class="benefits-item"> Email Reports</li>
           </ul>
         </div>
-        <div class="start-button-container">
+        <div class="start-button-container flex-col-center">
           <button class="start-trial"> Start my Trial </button>
         </div>
       </div>
