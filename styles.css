@@ -70,6 +70,29 @@ body{
     border-radius: 13px;
 }
 
+.slider-component{
+    margin: 10px 0px;
+    width: 80%;
+}
+
+.slider{
+    width: 100%;
+    appearance: none;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.slider::-webkit-slider-runnable-track{
+    width: 100%;
+    appearance: none;
+    background-color: hsl(226, 100%, 91%);
+}
+
+.slider::-webkit-slider-thumb{
+    box-shadow: -130px 0 0 130px hsl(174, 77%, 80%);
+    
+}
+
 ul{
     list-style-image: url('./images/icon-check.svg');
 }
